@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+nav .navbar {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: -1px 8px 3px -3px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: -1px 8px 3px -3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: -1px 8px 3px -3px rgba(0, 0, 0, 0.19);
+}
+
+nav .logo h1 {
+  font-size: 27px;
+  cursor: pointer;
+}
+
+nav .navbar-list .nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .navbar-list .nav-list ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav .navbar-list .nav-list ul li {
+  margin: 0 15px;
+}
+
+nav .navbar-list .nav-list ul li a {
+  color: black;
+  transition: 0.3s;
+}
+
+nav .navbar-list .nav-list ul li:hover a {
+  color: blue;
+}
+
+nav .ham {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+/* Home */
+
+.home {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.home .home-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.home .home-describe {
+  width: 30%;
+  margin-left: 200px;
+}
+
+.home .home-tittle h1 {
+  font-size: 50px;
+}
+.home .home-tittle-sec {
+  margin-top: -10px;
+  margin-bottom: 5px;
+  color: blue;
+}
+
+.home .home-image img {
+  width: 500px;
+  margin-right: 80px;
+  margin-top: -40px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+footer p {
+  font-weight: bold;
+}
+/* About */
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+.container .container-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.container .container-prof {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container .container-profile {
+  display: block;
+  width: 350px;
+  margin-right: 150px;
+}
+
+.container .card-profile img {
+  width: 400px;
+  margin-right: -80px;
+}
+
+/* Work */
+
+.container-work {
+  width: 100%;
+}
+
+.container-work .container-title {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.container-work .card-work-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container-work .card-work-center .card-work-title h3 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: -10px;
+}
+
+.container-work .card-work-center .card-work-video {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+/* Contact */
+
+.container-contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container-contact .left {
+  width: 350px;
+}
+
+.container-contact .right .right-icons i {
+  font-size: 30px;
+  color: black;
+  margin: 5px 0;
+}
+
+/* Responsive Styles */
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  nav .navbar {
+    height: auto;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  nav .navbar-list {
+    position: relative;
+    margin: 0 20px;
+  }
+
+  nav .nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  nav .nav-list ul {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background-color: rgb(231, 231, 231);
+    width: 35%;
+    height: 100%;
+    padding: 3rem;
+    justify-content: space-around;
+    flex-direction: column;
+    transition: left 0.3s ease;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    box-shadow: 4px px 5px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 4px -2px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 4px -2px 5px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  nav .nav-list ul.show {
+    left: 0;
+  }
+
+  nav .nav-list ul li {
+    margin: 20px 0;
+  }
+
+  nav .navbar-list .nav-list ul li:hover a {
+    color: rgb(153, 153, 153);
+  }
+
+  nav .ham {
+    display: flex;
+  }
+  .home .home-main {
+    display: block;
+  }
+
+  .home .home-describe {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 50px;
+  }
+  .home .home-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+  }
+  .home .home-image img {
+    width: 350px;
+  }
+
+  .container .container-profile,
+  .container .card-profile img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .container-work .card-work-center {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-contact {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .container-contact .left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-contact .right .right-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 13px;
+  }
+  .container-contact .right .right-icons a i {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  .container-contact .right .right-icons i {
+    margin: 0px 5px;
+  }
+
+  .container .container-about .card-profile img {
+    width: 300px;
+  }
+
+  .container .container-about .container-profile {
+    width: 40%;
+    font-size: 13px;
+  }
+}
+
+/* Tablets and Larger Mobile Devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .home .home-describe {
+    width: 50%;
+    margin-left: 100px;
+  }
+
+  .home .home-image img {
+    width: 400px;
+    margin-right: 40px;
+  }
+
+  .container .container-profile,
+  .container .card-profile img {
+    width: 65%;
+    margin-right: 50px;
+    margin-left: 100px;
+  }
+
+  .container-contact {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .container-contact .left {
+    width: 45%;
+  }
+}
