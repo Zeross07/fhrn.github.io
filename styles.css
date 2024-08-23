@@ -137,7 +137,7 @@ footer p {
 }
 
 .container .container-profile .describe-profile {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .container .card-profile img {
@@ -253,6 +253,10 @@ footer p {
 
   nav .ham {
     display: flex;
+  }
+
+  .home {
+    height: 100vh;
   }
   .home .home-main {
     display: block;
