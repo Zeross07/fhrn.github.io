@@ -270,13 +270,29 @@ footer p {
   .home .home-image img {
     width: 350px;
   }
-
-  .container .container-profile,
-  .container .card-profile img {
+  .container .container-about {
     width: 100%;
-    margin-right: 0;
+    height: auto;
   }
 
+  .container .container-about .container-profile {
+    display: block;
+    margin: -30px auto 0 auto;
+  }
+
+  .container .container-about .container-profile .describe-profile {
+    margin-bottom: 20px;
+  }
+
+  .container .container-about .card-profile img {
+    margin-top: -50px;
+    margin-right: 2px;
+    padding: 30px 30px;
+  }
+
+  .container .container-about .edu-profile {
+    font-size: 10px;
+  }
   .container-work .card-work-center {
     flex-direction: column;
     align-items: center;
