@@ -158,6 +158,7 @@ footer p {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .container-work .card-work-center .card-work-title h3 {
@@ -281,6 +282,26 @@ footer p {
     align-items: center;
   }
 
+  .container-work .card-work {
+    margin-left: 50px;
+  }
+  .container-work .card-work-video iframe {
+    width: 70%;
+    height: auto;
+  }
+  .container-work .container-title {
+    width: 60%;
+    margin: 20px auto;
+  }
+  .container-work .container-title h1 {
+    font-size: 20px;
+  }
+
+  .container-work .container-work-main .card-work-title h3 {
+    font-size: 15px;
+    margin-right: 60px;
+  }
+
   .container-contact {
     flex-direction: column;
     width: 80%;
@@ -297,12 +318,13 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     font-size: 13px;
   }
   .container-contact .right .right-icons a i {
     font-size: 20px;
-    margin-left: 20px;
+    margin-left: 0;
   }
 
   .container-contact .right .right-icons i {
@@ -314,8 +336,13 @@ footer p {
   }
 
   .container .container-about .container-profile {
-    width: 40%;
+    width: 60%;
     font-size: 13px;
+  }
+
+  .container .container-about .container-prof {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
