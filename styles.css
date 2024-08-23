@@ -136,6 +136,10 @@ footer p {
   margin-right: 150px;
 }
 
+.container .container-profile .describe-profile {
+  margin-bottom: 25px;
+}
+
 .container .card-profile img {
   width: 400px;
   margin-right: -80px;
